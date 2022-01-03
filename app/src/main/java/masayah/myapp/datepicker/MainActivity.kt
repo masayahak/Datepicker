@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         val eText = findViewById<View>(R.id.datepicker) as EditText
         eText.setOnClickListener {
+            // ドラムロール式DatePickerを呼び出す
             MyDatePicker.showDatePicker(eText)
         }
     }
