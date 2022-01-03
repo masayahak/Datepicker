@@ -52,7 +52,7 @@ object MyDatePicker {
         // ドラム式DatePicker表示
         val picker = DatePickerDialog(
             context,
-            THEME_HOLO_LIGHT,   // ドラム式 背景白のテーマ
+            THEME_HOLO_LIGHT,   // テーマ：ドラム式 背景白
 
             // ダイアログでOKをクリックされたときの処理 日付入力フィールドへ値を設定
             { _, getYear, getMonthOfYear, getDayOfMonth
