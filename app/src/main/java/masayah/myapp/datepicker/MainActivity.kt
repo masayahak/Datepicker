@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.EditText
 import android.os.Build
+import android.util.Log
 import androidx.annotation.RequiresApi
 import java.time.*
 
