@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/dropdown_label"
+        android:id="@+id/date_label"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,12 +18,26 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/datepicker"
+            android:id="@+id/date"
             android:layout_width="190dp"
             android:layout_height="60dp"
             android:inputType="date"
-            android:drawableEnd="@drawable/ic_arrow_down"
+            android:clickable="false"
             />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- DatePicker表示ボタン -->
+    <ImageView
+        android:id="@+id/date_picker_actions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="DatePicker"
+        android:src="@drawable/ic_arrow_down"
+        app:layout_constraintTop_toTopOf="@id/date_label"
+        app:layout_constraintBottom_toBottomOf="@id/date_label"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@id/date_label"
+        android:layout_marginEnd="8dp"
+        app:tint="@android:color/black" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

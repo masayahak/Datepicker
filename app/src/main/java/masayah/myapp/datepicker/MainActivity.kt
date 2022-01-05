@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.EditText
 import android.os.Build
 import android.util.Log
+import android.widget.ImageView
 import androidx.annotation.RequiresApi
 import java.time.*
 
@@ -16,9 +17,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val eText = findViewById<View>(R.id.datepicker) as EditText
-        eText.setOnClickListener {
+        val img = findViewById<ImageView>(R.id.date_picker_actions)
+        img.setOnClickListener {
             // ドラムロール式DatePickerを呼び出す
+            val eText = findViewById<View>(R.id.date) as EditText
             MyDatePicker.showDatePicker(eText)
         }
     }
