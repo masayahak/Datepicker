@@ -19,7 +19,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/date"
-            android:layout_width="190dp"
+            android:layout_width="220dp"
             android:layout_height="60dp"
             android:inputType="date"
             android:clickable="false"
