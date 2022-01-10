@@ -27,10 +27,10 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <!-- DatePicker表示ボタン -->
-    <ImageView
+    <ImageButton
         android:id="@+id/date_picker_actions"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
         android:contentDescription="DatePicker"
         android:src="@drawable/ic_arrow_down"
         app:layout_constraintTop_toTopOf="@id/date_label"
@@ -38,6 +38,8 @@
         android:layout_marginTop="4dp"
         app:layout_constraintEnd_toEndOf="@id/date_label"
         android:layout_marginEnd="8dp"
-        app:tint="@android:color/black" />
+        app:tint="@android:color/black"
+        android:background="@color/white"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
